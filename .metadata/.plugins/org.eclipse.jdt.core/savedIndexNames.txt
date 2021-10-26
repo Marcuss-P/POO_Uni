@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\marco\eclipse-workspace\POO_Uni\.metadata\.plugins\org.eclipse.jdt.core
+53848567.index
+1786544478.index
+504925.index
+468591377.index

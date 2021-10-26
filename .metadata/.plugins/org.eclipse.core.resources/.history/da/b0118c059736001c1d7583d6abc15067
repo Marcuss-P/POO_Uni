@@ -1,0 +1,48 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.PessoaFisica;
+import entities.PessoaJuridica;
+
+public class Program {
+
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Total de contribuintes: ");
+		int n = sc.nextInt();
+		
+		for(i=1; i<=n; i++) {
+		
+			System.out.print("Digite 1 para pessoa Fisica e 2 para pessoa Juridica: ");
+			int tipo = sc.nextInt();
+			if(tipo == 1) {
+				System.out.print("Digite seu nome: ");
+				String nome = sc.nextLine();
+				System.out.print("Digite sua renda anual: ");
+				double rendaAnual = sc.nextDouble();
+				System.out.print("Digite seu gasto com a saude: ");
+				double gastoSaude = sc.nextDouble();
+				
+				PessoaFisica pf = new PessoaFisica(nome, rendaAnual, gastoSaude);
+			} else {
+				System.out.print("Digite seu nome: ");
+				String nome = sc.nextLine();
+				System.out.print("Digite sua renda anual: ");
+				double rendaAnual = sc.nextDouble();
+				System.out.print("Digite o total de funcionarios: ");
+				double funcionario = sc.nextDouble();
+				
+				PessoaJuridica pj = new PessoaJuridica(nome, rendaAnual, funcionario);
+			}
+				
+		}
+		
+		
+		
+		sc.close();
+	}
+	
+}

@@ -1,0 +1,25 @@
+package entities;
+
+public class Pessoa {
+
+	private String nome;
+	private double rendaAnual;
+	private double gastoSaude;
+	private double funcionarios;
+	
+	public Pessoa(String nome, double rendaAnual, double gastoSaude) {
+		this.nome = nome;
+		this.rendaAnual = rendaAnual;
+		this.gastoSaude = gastoSaude;
+	}
+
+	public Pessoa(String nome, double rendaAnual, double funcionarios) {
+		this.nome = nome;
+		this.rendaAnual = rendaAnual;
+		this.funcionarios = funcionarios;
+	}
+	
+	
+	
+	
+}

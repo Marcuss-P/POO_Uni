@@ -1,0 +1,17 @@
+package entities;
+
+public class PessoaFisica {
+
+	private String nome;
+	private double rendaAnual;
+	private double gastoSaude;
+
+	public PessoaFisica(String nome, double rendaAnual, double gastoSaude) {
+		super();
+		this.nome = nome;
+		this.rendaAnual = rendaAnual;
+		this.gastoSaude = gastoSaude;
+	}
+
+	
+}
